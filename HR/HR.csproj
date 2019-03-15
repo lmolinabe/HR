@@ -105,6 +105,7 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Persistence\Employee.cs">
       <DependentUpon>HRContext.tt</DependentUpon>
     </Compile>

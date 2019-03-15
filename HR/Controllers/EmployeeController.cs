@@ -28,7 +28,7 @@ namespace HR.Controllers
         }
 
         // POST: api/Employee
-        public void Post(Employee employee)
+        public void Post([FromBody]Employee employee)
         {
             using (var unitOfWork = new UnitOfWork(new HRContext()))
             {
@@ -38,7 +38,7 @@ namespace HR.Controllers
         }
 
         // PUT: api/Employee/5
-        public void Put(int id, Employee employee)
+        public void Put(int id, [FromBody]Employee employee)
         {
             using (var unitOfWork = new UnitOfWork(new HRContext()))
             {
